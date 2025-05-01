@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #dddddd;
+  overflow-y: hidden;
+}
+
+.container {
+  background-color: #fdfdfd;
+  max-width: 500px;
+  margin: 100px auto;
+  padding: 30px;
+  box-sizing: border-box;
+  border-radius: 15px;
+  box-shadow: 5px 5px 6px 6px lightgrey;
+}
+
+.container h1 {
+  text-align: center;
+  padding: 5px;
+  margin: 10px;
+  text-transform: uppercase;
+}
+
+.container .clock {
+  background-color: #dddddd;
+  padding: 30px;
+  border-radius: 15px;
+  margin: 10px;
+  text-align: center;
+  box-shadow: 1px 1px 2px 2px rgb(162, 162, 162);
+}
+
+.container .clock h1 {
+  font-family: "Orbitron", sans-serif;
+  font-size: 2rem;
+}
+
+.container .fitur {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+}
+
+.container .fitur button {
+  border: none;
+  padding: 10px;
+  border-radius: 15px;
+  font-size: 1rem;
+  font-style: italic;
+  cursor: pointer;
+}
+
+.change-color {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 30px;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.change-color input {
+  margin: auto;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.footer {
+  padding: 1.5rem;
+  background-color: #f9f9f9;
+  border-top: 1px solid #ddd;
+  text-align: center;
+}
+
+.footer-text {
+  font-size: 14px;
+  color: #555;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.sosial-media {
+  margin-top: 12px;
+}
+
+.sosial-media a {
+  text-decoration: none;
+  margin: 0 10px;
+  color: #555;
+  font-size: 24px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.sosial-media a:hover {
+  color: #000;
+  transform: scale(1.2);
+}
+
+/* Responsive untuk tablet (iPad) */
+@media (max-width: 768px) {
+  .container {
+    max-width: 90%;
+    margin: auto;
+    padding: 20px;
+  }
+
+  .container .clock {
+    padding: 20px;
+  }
+
+  .container .clock h1 {
+    font-size: 1.8rem;
+  }
+
+  .container .fitur {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .container .fitur button {
+    width: 100%;
+  }
+
+  .change-color {
+    margin: 20px;
+    font-size: 1rem;
+  }
+}
+
+/* Responsive untuk mobile (smartphone) */
+@media (max-width: 480px) {
+  .container {
+    max-width: 95%;
+    margin: 40px auto;
+    padding: 15px;
+  }
+
+  .container h1 {
+    font-size: 1.2rem;
+  }
+
+  .container .clock h1 {
+    font-size: 1.5rem;
+  }
+
+  .container .fitur {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .container .fitur button {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+
+  .change-color {
+    font-size: 0.95rem;
+  }
+
+  .footer-text {
+    font-size: 12px;
+    padding: 0 10px;
+  }
+
+  .sosial-media a {
+    font-size: 20px;
+  }
+}
